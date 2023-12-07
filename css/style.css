@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tries {
+    text-align: center;
+    font-size: 25px;
+}
+
+.username, .comp {
+    text-align: center;
+    background-color: yellow;
+    border-radius: 7px;
+    border: 1px solid #000;
+
+    padding: 5px 0;
+}
+
+.username {
+    background-color: cyan;
+}
+
+.score__user, .score__comp {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+button {
+    border: 2px solid green;
+    color: #fff;
+    background-color: #000;
+    border-radius: 7px;
+    padding: 7px 20px;
+
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.end, .restart {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.end {
+    display: none;
+}
+
+.restart {
+    display: none;
+    padding: 5px 15px;
+    margin-top: 8px;
+}
+
+.card__score-comp, .card__score-user {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media (max-width: 520px) {
+    img {
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px){
+    img {
+        height: 155px;
+
+    }
+
+    .container {
+        flex-direction: column;
+        transform: translate(-50%, -41%);
+    }
+
+    .restart {
+        font-size: 13px;
+    }
+
+    .tries {
+        font-size: 17px;
+    }
+
+    .end {
+        font-size: 18px;
+        margin: 4px 0;
+    }
+
+    .card__score-comp, .card__score-user, .score__user, .score__comp {
+        font-size: 18px;
+    }
+
+    .generate {
+        margin: 7px 0;
+    }
+}
